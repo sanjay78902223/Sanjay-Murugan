@@ -92,10 +92,10 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
   const currentService = services.find((s) => s.id === activeTab) || services[0];
 
   return (
-    <section id="services" className="relative py-28 px-6 bg-[#05070d] border-t border-slate-900">
+    <section id="services" className="relative py-20 sm:py-28 px-4 sm:px-6 bg-[#05070d] border-t border-slate-900 overflow-hidden max-w-full">
       
       {/* Background radial glow */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-900/10 blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] sm:w-[800px] h-[300px] sm:h-[400px] bg-blue-900/10 blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         

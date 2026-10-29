@@ -337,7 +337,7 @@ export const CubeCanvas: React.FC<CubeCanvasProps> = ({ progress }) => {
   return (
     <div
       ref={containerRef}
-      className="absolute inset-0 pointer-events-none z-10 w-full h-full"
+      className="absolute inset-0 pointer-events-none z-10 w-full h-full max-w-full overflow-hidden"
       style={{
         opacity: progress < 0.3 ? 0 : Math.min(1, (progress - 0.3) / 0.12),
         transition: 'opacity 0.2s ease-out',

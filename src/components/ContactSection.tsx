@@ -97,7 +97,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialService =
   };
 
   return (
-    <section id="contact" className="relative py-28 px-6 bg-[#05070d] border-t border-slate-900">
+    <section id="contact" className="relative py-20 sm:py-28 px-4 sm:px-6 bg-[#05070d] border-t border-slate-900 overflow-hidden max-w-full">
       <div className="max-w-7xl mx-auto relative z-10">
         
         {/* Section Header */}

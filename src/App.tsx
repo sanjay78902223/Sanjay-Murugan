@@ -46,11 +46,11 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#05070d] text-slate-100 flex flex-col font-sans selection:bg-cyan-500/20 selection:text-cyan-300">
+    <div className="min-h-screen bg-[#05070d] text-slate-100 flex flex-col font-sans selection:bg-cyan-500/20 selection:text-cyan-300 w-full max-w-full overflow-x-clip">
       {/* 3-Zone Top Navigation */}
       <Navigation onContactClick={handleScrollToContact} />
 
-      <main className="flex-1 w-full">
+      <main className="flex-1 w-full max-w-full overflow-x-clip">
         {/* Main Feature: Scroll-Controlled Cinematic Experience (Hero -> Kinetic Typography -> 3D Cube -> Transition) */}
         <CinematicHero onExploreClick={handleScrollToServices} />
 
